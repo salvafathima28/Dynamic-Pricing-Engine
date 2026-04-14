@@ -33,14 +33,14 @@ PriceIQ is a full-stack pricing intelligence platform designed to help businesse
 ### 🏠 Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
-### 📊 Pricing Insights
-![Insights](screenshots/insights.png)
+### 📊 Profit Margins
+![Insights](screenshots/profit.png)
 
 ### 🚨 Alerts System
 ![Alerts](screenshots/alerts.png)
 
-### 🧠 ML Pipeline
-![ML Pipeline](screenshots/ml_pipeline.png)
+### 📈 Update Prices
+![ML Pipeline](screenshots/updste.png)
 
 ---
 
