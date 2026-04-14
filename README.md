@@ -114,7 +114,7 @@ cd dynamic-pricing-engine
 1. Create Virtual Environment
 python -m venv .venv
 .venv\Scripts\activate   # Windows
-# source .venv/bin/activate   # Mac/Linux
+source .venv/bin/activate   # Mac/Linux
 2. Install Dependencies
 pip install -r requirements.txt
 3. Run Scheduler (Important)
