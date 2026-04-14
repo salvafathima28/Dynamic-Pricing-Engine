@@ -1,106 +1,133 @@
 # 🚀 Dynamic Pricing Engine — PriceIQ
 
-**Price Smarter. Sell Faster.**
+### **Price Smarter. Sell Faster. 🚀**
 
-An AI-powered dynamic pricing system that analyzes market data, competitor prices, and demand signals to recommend optimal pricing strategies in real time.
+---
+
+## 📖 About
+
+**PriceIQ** is an AI-powered dynamic pricing platform designed to help businesses make intelligent pricing decisions using real-time market signals, machine learning, and automation.
+
+The system analyzes competitor pricing, demand trends, weather signals, and user behavior to recommend optimal pricing strategies that maximize revenue while maintaining fairness and competitiveness.
+
+This project combines **data science, machine learning, and real-time analytics** into a production-style dashboard built using Streamlit.
 
 ---
 
 ## 📌 Overview
 
-PriceIQ is a full-stack pricing intelligence platform designed to help businesses:
+PriceIQ enables businesses to:
 
-- Adjust prices dynamically based on market conditions
-- Maximize profit margins
-- Stay competitive in real-time
-- Identify pricing opportunities and risks
+* 📈 Dynamically adjust prices based on market conditions
+* 💰 Maximize profit margins and revenue
+* ⚔️ Stay competitive with real-time competitor tracking
+* 🚨 Detect pricing risks and opportunities instantly
 
 ---
 
 ## ✨ Key Features
 
-- 📊 **Real-Time Pricing Dashboard**
-- 🤖 **AI-Based Price Recommendations**
-- 📉 **Profit Margin Analysis**
-- 🚨 **Smart Alerts for Price Optimization**
-- 📈 **Price History Tracking**
-- 🧠 **Machine Learning Pipeline (Demand Forecasting + RL)**
+* 📊 **Real-Time Pricing Dashboard**
+* 🤖 **AI-Based Price Recommendations (RL + ML)**
+* 📉 **Profit Margin Analysis**
+* 🚨 **Smart Alerts for Pricing Optimization**
+* 📈 **Price History Tracking**
+* 🧠 **Machine Learning Pipeline (Demand Forecasting + RL Agent)**
+* 🌦️ **Weather & Trend-Based Demand Signals**
+* 🛒 **Competitor Price Monitoring (SerpAPI)**
 
 ---
 
 ## 🖼️ Screenshots
 
 ### 🏠 Dashboard
+
 ![Dashboard](screenshots/dashboard.png)
 
 ### 📊 Profit Margins
-![Insights](screenshots/profit.png)
+
+![Profit](screenshots/profit.png)
 
 ### 🚨 Alerts System
+
 ![Alerts](screenshots/alerts.png)
 
 ### 📈 Update Prices
-![updste_prices](screenshots/update.png)
+
+![Update](screenshots/update.png)
 
 ---
 
 ## 🏗️ Project Structure
 
+```
 dynamic-pricing-engine/
 │
-├── app.py # Main Streamlit app
-├── scheduler.py # Fetches and updates market data
-├── price_manager.py # Pricing logic and updates
-├── pricing_engine.py # Core pricing decision logic
-├── market_fetcher.py # Competitor data simulation
-├── demand_model.py # Demand prediction model
-├── forecaster.py # Forecasting logic
-├── config.py # Product configurations
-├── products.csv # Product dataset
+├── app.py                 # Main Streamlit app
+├── scheduler.py          # Fetches and updates market data
+├── price_manager.py      # Pricing updates & logging
+├── pricing_engine.py     # RL-based pricing decisions
+├── market_fetcher.py     # API + competitor data logic
+├── demand_model.py       # XGBoost demand prediction
+├── forecaster.py         # 24-hour demand forecasting
+├── config.py             # Configurations & constants
+├── products.csv          # Product dataset
 │
-├── *.db # Local databases
-├── *.pkl / *.pth # ML models
+├── pricing_cache.db      # Cached pricing data
+├── demand_model.pkl      # Trained ML model
+├── dqn_model.pth         # RL model
 │
 └── README.md
-
+```
 
 ---
 
 ## ⚙️ Tech Stack
 
-- **Frontend/UI:** Streamlit  
-- **Backend:** Python  
-- **Data Processing:** Pandas, NumPy  
-- **Visualization:** Plotly  
-- **Machine Learning:** XGBoost, Reinforcement Learning (DQN)  
-- **Database:** SQLite  
+* **Frontend/UI:** Streamlit
+* **Backend:** Python
+* **Data Processing:** Pandas, NumPy
+* **Visualization:** Plotly
+* **Machine Learning:** XGBoost, Reinforcement Learning (DQN - PyTorch)
+* **Database:** SQLite
+* **APIs:** SerpAPI (market data), Open-Meteo (weather)
 
 ---
 
 ## 🧠 How It Works
 
-1. **Market Data Collection**
-   - Fetches competitor prices
-   - Calculates market averages
+### 1. Market Intelligence
 
-2. **Pricing Engine**
-   - Compares your price vs market
-   - Determines action:
-     - Raise
-     - Lower
-     - Hold
+* Fetches competitor prices using SerpAPI
+* Calculates market min, avg, and max
 
-3. **Profit Optimization**
-   - Calculates margin and profit
-   - Suggests optimal pricing
+### 2. Pricing Engine
 
-4. **ML Pipeline**
-   - Demand forecasting using features:
-     - Price
-     - Competitor price
-     - Time signals
-     - Trend score
-   - Reinforcement Learning for pricing strategy
+* Compares your price with market average
+* Decides:
+
+  * 🔻 Lower Price
+  * 🔼 Raise Price
+  * ⏸️ Hold
+
+### 3. Demand Forecasting
+
+* Uses ML model (XGBoost)
+* Inputs:
+
+  * Price
+  * Competitor price
+  * Time of day
+  * Trend score
+  * Weather signals
+
+### 4. Reinforcement Learning (DQN)
+
+* Learns optimal pricing strategy
+* Balances:
+
+  * Revenue maximization
+  * Fair pricing constraints
 
 ---
 
@@ -108,16 +135,136 @@ dynamic-pricing-engine/
 
 ### 1. Clone the Repository
 
+```bash
 git clone https://github.com/salvafathima28/dynamic-pricing-engine.git
 cd dynamic-pricing-engine
+```
 
-1. Create Virtual Environment
+---
+
+### 2. Create Virtual Environment
+
+```bash
 python -m venv .venv
-.venv\Scripts\activate   # Windows
-source .venv/bin/activate   # Mac/Linux
-2. Install Dependencies
+
+# Windows
+.venv\Scripts\activate
+
+# Mac/Linux
+source .venv/bin/activate
+```
+
+---
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-3. Run Scheduler (Important)
+```
+
+---
+
+### 4. Setup API Keys (IMPORTANT 🔑)
+
+Create a `.env` file in the root directory:
+
+```env
+SERP_API_KEY=your_serpapi_key_here
+```
+
+Install dotenv:
+
+```bash
+pip install python-dotenv
+```
+
+Update your `config.py`:
+
+```python
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+SERP_API_KEY = os.getenv("SERP_API_KEY")
+```
+
+---
+
+### 🔐 Security Note
+
+* Never hardcode API keys in code
+* Add `.env` to `.gitignore`
+
+```
+.env
+```
+
+---
+
+## 🌦️ Weather API
+
+* Uses **Open-Meteo API**
+* No API key required ✅
+* Provides:
+
+  * Temperature
+  * Rainfall
+  * Weather signals
+
+---
+
+## ▶️ Run the Project
+
+### 1. Run Scheduler (fetches live data)
+
+```bash
 python scheduler.py
-4. Run the App
+```
+
+### 2. Run Streamlit App
+
+```bash
 streamlit run app.py
+```
+
+## 📊 Example Insights
+
+* Detect overpriced products instantly
+* Identify safe price increase opportunities
+* Track category-level profit margins
+* Get real-time actionable recommendations
+
+---
+
+## 🔮 Future Improvements
+
+* 🔗 Live Amazon/Flipkart scraping
+* 🤖 Advanced RL optimization
+* 🏪 Multi-store support
+* ☁️ Cloud database integration
+* 📡 Real-time streaming pipeline
+
+---
+
+## 👩‍💻 Author
+
+**Salva Fathima**
+**Ajas Mohammed**
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+⭐ Star the repository
+🚀 Share it with others
+
+---
+
+## 🏁 Final Note
+
+This project demonstrates how **AI + real-time data + pricing strategy** can be combined to build an intelligent revenue optimization system similar to industry-level solutions.
+
+---
