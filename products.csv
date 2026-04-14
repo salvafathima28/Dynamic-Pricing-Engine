@@ -1,0 +1,35 @@
+id,name,category,brand,keyword,your_price,min_price,max_price,stock,cost_price
+iphone16_128,Apple iPhone 16 128GB,Phones,Apple,Apple iPhone 16 128GB,79900,72000,89000,5,71000
+iphone16_256,Apple iPhone 16 256GB,Phones,Apple,Apple iPhone 16 256GB,89900,82000,99000,3,80000
+iphone16pro_256,Apple iPhone 16 Pro 256GB,Phones,Apple,Apple iPhone 16 Pro 256GB,119900,104999,129000,2,105000
+iphone15_128,Apple iPhone 15 128GB,Phones,Apple,Apple iPhone 15 128GB,62000,62000,75000,4,58000
+samsung_s24_256,Samsung Galaxy S24 256GB,Phones,Samsung,Samsung Galaxy S24 256GB,74999,68000,82000,3,65000
+samsung_a55,Samsung Galaxy A55 5G 128GB,Phones,Samsung,Samsung Galaxy A55 5G 128GB,34999,31000,38000,6,28000
+poco_x6pro,Poco X6 Pro 5G 256GB,Phones,Poco,Poco X6 Pro 5G 256GB,21999,18999,24999,8,17500
+oneplus_nord_ce4,OnePlus Nord CE4 5G 128GB,Phones,OnePlus,OnePlus Nord CE4 5G 128GB,22000,22000,27999,5,20000
+redmi_note13pro,Redmi Note 13 Pro 5G 128GB,Phones,Xiaomi,Redmi Note 13 Pro 5G 128GB,24999,21999,27999,7,19500
+realme_12pro,Realme 12 Pro+ 5G 256GB,Phones,Realme,Realme 12 Pro Plus 5G 256GB,29999,26999,33999,4,24000
+airpods_pro2,Apple AirPods Pro Gen 2,Audio,Apple,Apple AirPods Pro 2nd generation,21500,20999,24999,6,18000
+airpods3,Apple AirPods Gen 3,Audio,Apple,Apple AirPods 3rd generation,16999,15999,19999,4,13500
+samsung_buds2pro,Samsung Galaxy Buds 2 Pro,Audio,Samsung,Samsung Galaxy Buds 2 Pro,12999,11499,14999,5,9500
+samsung_buds_fe,Samsung Galaxy Buds FE,Audio,Samsung,Samsung Galaxy Buds FE,6999,5999,8499,8,4800
+sony_wh1000xm5,Sony WH-1000XM5 Headphones,Audio,Sony,Sony WH-1000XM5 wireless headphones,26999,24999,31999,3,21000
+jbl_tune770,JBL Tune 770NC Headphones,Audio,JBL,JBL Tune 770NC wireless headphones,7999,6499,9999,6,5500
+boAt_airdopes141,boAt Airdopes 141 TWS,Audio,boAt,boAt Airdopes 141 TWS earbuds,1200,999,1999,20,750
+sony_wf1000xm5,Sony WF-1000XM5 TWS,Audio,Sony,Sony WF-1000XM5 earbuds,24999,22999,27999,3,19500
+macbook_air_m2_8_256,MacBook Air M2 8GB 256GB,Laptops,Apple,MacBook Air M2 8GB 256GB,106990,106990,119000,2,98000
+macbook_air_m3_8_256,MacBook Air M3 8GB 256GB,Laptops,Apple,MacBook Air M3 8GB 256GB,114900,112990,124000,2,99000
+macbook_pro_m3_14,MacBook Pro M3 14in 8GB,Laptops,Apple,MacBook Pro M3 14 inch 8GB 512GB,168900,164990,179000,1,148000
+dell_xps_13,Dell XPS 13 Plus i7,Laptops,Dell,Dell XPS 13 Plus i7 Intel 2024,119990,109990,129990,2,98000
+hp_spectre_x360,HP Spectre x360 14,Laptops,HP,HP Spectre x360 14 Intel Evo,129990,119990,139990,1,108000
+lenovo_yoga_slim7,Lenovo Yoga Slim 7 Pro,Laptops,Lenovo,Lenovo Yoga Slim 7 Pro AMD,84990,74990,94990,3,68000
+ipad_air_m2,Apple iPad Air M2 11in 128GB,Tablets,Apple,Apple iPad Air M2 11 inch 128GB WiFi,59900,54999,64999,3,50000
+ipad_pro_m4,Apple iPad Pro M4 11in 256GB,Tablets,Apple,Apple iPad Pro M4 11 inch 256GB,99900,94999,109999,2,85000
+samsung_tab_s9fe,Samsung Galaxy Tab S9 FE,Tablets,Samsung,Samsung Galaxy Tab S9 FE WiFi 128GB,36999,33999,39999,4,28000
+apple_watch_s10,Apple Watch Series 10 42mm,Wearables,Apple,Apple Watch Series 10 42mm GPS,46900,43999,49999,4,38000
+samsung_watch7,Samsung Galaxy Watch 7 44mm,Wearables,Samsung,Samsung Galaxy Watch 7 44mm,29999,27499,32999,3,23000
+iphone_case_16,Apple iPhone 16 Silicone Case,Accessories,Apple,Apple iPhone 16 Silicone Case original,3300,2999,5499,15,2800
+magsafe_charger,Apple MagSafe Charger 15W,Accessories,Apple,Apple MagSafe Charger 15W original,4500,3499,5499,10,3000
+usbc_cable_apple,Apple USB-C Braided Cable 1m,Accessories,Apple,Apple USB-C to USB-C braided cable 1m,2300,1999,3499,12,1800
+samsung_65w_charger,Samsung 65W Super Fast Charger,Accessories,Samsung,Samsung 65W Super Fast charger USB-C,2499,2499,4499,8,2000
+anker_powerbank_20k,Anker PowerCore 20000mAh,Accessories,Anker,Anker PowerCore 20000mAh power bank,3499,2999,4499,10,2500
