@@ -40,7 +40,7 @@ PriceIQ is a full-stack pricing intelligence platform designed to help businesse
 ![Alerts](screenshots/alerts.png)
 
 ### 📈 Update Prices
-![ML Pipeline](screenshots/updste.png)
+![updste_prices](screenshots/update.png)
 
 ---
 
