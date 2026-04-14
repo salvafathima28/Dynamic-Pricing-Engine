@@ -136,7 +136,8 @@ dynamic-pricing-engine/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/salvafathima28/dynamic-pricing-engine.git 
+git clone https://github.com/salvafathima28/dynamic-pricing-engine.git
+OR
 git clone https://github.com/ajasmohammed48/dynamic-pricing-engine.git
 cd dynamic-pricing-engine
 ```
